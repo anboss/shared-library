@@ -8,8 +8,9 @@ def extract_fields_from_repo_url(repository_url):
   name_space = matches.group(3)
   project = matches.group(4)
 
-  return {'protocol':protocol, 'domain':domain, 'name_space':name_space, 'project': project}
+  return name_space, project
 
-fields = extract_fields_from_repo_url('https://gitlab.com/gitlab-org/gitlab-ce.git')
+name_space, project = extract_fields_from_repo_url('https://gitlab.com/gitlab-org/gitlab-ce.git')
 
-print (fields)
+print (name_space)
+print (project)
