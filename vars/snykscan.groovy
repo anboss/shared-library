@@ -17,6 +17,6 @@ def call(projectName, organisation) {
               projectName: projectName, 
               snykInstallation: 'MySnyk', 
               snykTokenId: 'snyk-token',
-              additionalArguments: '--code --report'   
+              additionalArguments: '--code'   
        )
 }
