@@ -7,7 +7,8 @@ def call(projectName, organisation) {
        //snykSecurity failOnError: false, failOnIssues: false, organisation: organisation, projectName: projectName, snykInstallation: 'MySnyk', snykTokenId: 'snyk-token'
 
       script {
-	       sh 'C:/Gradle/bin/snyk code test'
+		sh 'C:/Gradle/bin/snyk code test'
+	       	sh 'C:/Gradle/bin/snyk code monitor'
       }
        
        snykSecurity (
