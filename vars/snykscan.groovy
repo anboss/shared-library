@@ -8,7 +8,7 @@ def call(projectName, organisation) {
 
       script {
 	sh '/c/Gradle/bin/snyk auth 307deaee-8220-489f-a4c3-c683be0d0de7'
-       	sh '/c/Gradle/bin/snyk code test'
+       	sh '/c/Gradle/bin/snyk test'
       }
        
        // snykSecurity (
